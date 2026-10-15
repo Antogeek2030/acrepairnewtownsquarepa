@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+16105550199';
+const phoneDisplay = '(610) 555-0199';
+---
+<Layout title="Service Areas | AC Repair Newtown Square PA" description="AC repair service areas: Newtown Square, Broomall, Media, Wayne, Havertown, Springfield, Marple and Delaware County, PA.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Service Areas</div>
+      <h1>Areas We Serve</h1>
+      <p>Same-day AC repair across Newtown Square and Delaware County.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="content-block" style="max-width:800px;margin:0 auto">
+        <h2>Primary Service Area</h2>
+        <p>We are based at 3728 West Chester Pike, Newtown Square, PA 19073 and proudly serve:</p>
+        <ul>
+          <li>Newtown Square</li>
+          <li>Broomall</li>
+          <li>Media</li>
+          <li>Wayne</li>
+          <li>Havertown</li>
+          <li>Springfield</li>
+          <li>Marple Township</li>
+          <li>Upper Darby</li>
+          <li>Radnor</li>
+          <li>And surrounding Delaware County communities</li>
+        </ul>
+        <p>Need service outside these areas? Call us — we often cover additional nearby towns depending on schedule.</p>
+        <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+      </div>
+    </div>
+  </section>
+</Layout>

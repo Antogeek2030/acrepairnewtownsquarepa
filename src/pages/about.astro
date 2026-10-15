@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+16105550199';
+const phoneDisplay = '(610) 555-0199';
+---
+<Layout title="About Us | AC Repair Newtown Square PA" description="Local licensed AC repair team serving Newtown Square and Delaware County. Same-day service, transparent pricing.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → About Us</div>
+      <h1>About AC Repair Newtown Square</h1>
+      <p>Your local cooling specialists on West Chester Pike.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="content-block" style="max-width:800px;margin:0 auto">
+        <h2>Local. Licensed. Focused on Cooling.</h2>
+        <p>We are a Newtown Square-based team dedicated to fast, honest air conditioning repair and maintenance. We know Delaware County homes — from older properties near the Pike to newer builds — and the systems that keep them comfortable through humid Pennsylvania summers.</p>
+        <p>Our technicians are licensed, insured, and trained on central air, ductless mini-splits, heat pumps, and all major brands. We show up with well-stocked vehicles, diagnose with instruments, and give you a clear written estimate before any work starts.</p>
+        <h3>What We Stand For</h3>
+        <ul>
+          <li>Same-day and 24/7 emergency response</li>
+          <li>Upfront pricing with no surprise fees</li>
+          <li>Honest repair-vs-replace guidance</li>
+          <li>Workmanship we stand behind</li>
+        </ul>
+        <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call {phoneDisplay}</a></p>
+      </div>
+    </div>
+  </section>
+</Layout>

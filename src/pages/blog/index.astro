@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+<Layout title="Blog | AC Repair Newtown Square PA" description="Tips, guides, and advice on air conditioning repair and maintenance for Newtown Square and Delaware County homeowners.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Blog</div>
+      <h1>AC Tips &amp; Guides</h1>
+      <p>Practical advice for keeping your home cool and your system efficient.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="blog-grid">
+        {posts.map((post) => (
+          <a href={`/blog/${post.slug}/`} class="blog-card" style="display:block">
+            <div class="blog-card-body">
+              <div class="blog-meta">{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</div>
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+              <span style="color:var(--primary);font-weight:600;font-size:0.9rem">Read more →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

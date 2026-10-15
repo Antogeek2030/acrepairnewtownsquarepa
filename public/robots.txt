@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://acrepairnewtownsquarepa.com/sitemap-index.xml

@@ -1,0 +1,32 @@
+---
+import Layout from '../layouts/Layout.astro';
+const phone = '+16105550199';
+const phoneDisplay = '(610) 555-0199';
+---
+<Layout title="Contact | AC Repair Newtown Square PA" description="Contact AC Repair Newtown Square for same-day service. Call (610) 555-0199. Located at 3728 West Chester Pike, Newtown Square, PA 19073.">
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> → Contact</div>
+      <h1>Contact Us</h1>
+      <p>Ready for same-day AC service in Newtown Square? Call or reach out below.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="two-col">
+        <div class="content-block" style="margin:0">
+          <h2>Get in Touch</h2>
+          <p><strong>Phone (24/7):</strong> <a href={`tel:${phone}`} style="color:var(--primary)">{phoneDisplay}</a></p>
+          <p><strong>Address:</strong><br />3728 West Chester Pike<br />Newtown Square, PA 19073</p>
+          <p><strong>Hours:</strong> Emergency service available 24 hours a day, 7 days a week. Standard scheduling during regular business hours.</p>
+          <p style="margin-top:1.5rem"><a href={`tel:${phone}`} class="btn btn-primary">Call Now</a></p>
+        </div>
+        <div>
+          <div class="map-wrapper" style="height:320px">
+            <iframe title="Map" src="https://www.openstreetmap.org/export/embed.html?bbox=-75.413362%2C39.976488%2C-75.393362%2C39.996488&amp;layer=mapnik&amp;marker=39.986488%2C-75.403362" loading="lazy" style="width:100%;height:100%;border:0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

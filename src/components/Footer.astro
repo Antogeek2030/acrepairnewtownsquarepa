@@ -1,0 +1,41 @@
+---
+const phone = '+16105550199';
+const phoneDisplay = '(610) 555-0199';
+const year = new Date().getFullYear();
+---
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>AC Repair Newtown Square</h4>
+        <p>Licensed air conditioning repair, replacement, and maintenance serving Newtown Square and Delaware County. Same-day service, upfront pricing, written guarantee.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <p><a href="/services/emergency-ac-repair/">Emergency AC Repair</a></p>
+        <p><a href="/services/central-ac-repair/">Central AC Repair</a></p>
+        <p><a href="/services/ductless-mini-split-repair/">Ductless Repair</a></p>
+        <p><a href="/services/ac-installation/">AC Installation</a></p>
+        <p><a href="/services/ac-maintenance/">Maintenance</a></p>
+      </div>
+      <div>
+        <h4>Common Problems</h4>
+        <p><a href="/problems/no-cool-air/">No Cool Air</a></p>
+        <p><a href="/problems/ac-not-turning-on/">AC Not Turning On</a></p>
+        <p><a href="/problems/strange-noises/">Strange Noises</a></p>
+        <p><a href="/problems/weak-airflow/">Weak Airflow</a></p>
+        <p><a href="/problems/leaking-ac/">Leaking Unit</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href={`tel:${phone}`}>{phoneDisplay}</a></p>
+        <p>3728 West Chester Pike<br />Newtown Square, PA 19073</p>
+        <p>Open 24 / 7 for emergencies</p>
+        <p style="margin-top:0.75rem"><a href="/service-areas/">Service Areas</a> · <a href="/blog/">Blog</a> · <a href="/about/">About</a> · <a href="/contact/">Contact</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {year} AC Repair Newtown Square PA. All rights reserved. | <a href="/privacy/">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
